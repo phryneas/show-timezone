@@ -1,0 +1,27 @@
+{
+  "name": "show-timezone",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/phryneas/show-timezone",
+  "author": "phryneas",
+  "license": "MIT",
+  "scripts": {
+    "start:firefox": "web-ext run --source-dir ./extension",
+    "build": "rollup -c rollup.config.js "
+  },
+  "dependencies": {
+    "tslib": "^1.10.0",
+    "web-ext": "^3.2.0"
+  },
+  "devDependencies": {
+    "@types/webextension": "npm:web-ext-types",
+    "eslint": "^6.6.0",
+    "prettier": "^1.18.2",
+    "rollup": "^1.26.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-resolve": "^0.0.1-predev.1",
+    "rollup-plugin-typescript": "^1.0.1",
+    "typescript": "^3.6.4"
+  }
+}

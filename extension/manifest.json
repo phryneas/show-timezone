@@ -1,0 +1,18 @@
+{
+  "description": "On certain pages (currently: github, twitter), if a user profile with a location is shown, display the current time for that user and other information.",
+  "manifest_version": 2,
+  "name": "Show Timezones",
+  "version": "1.0",
+  "homepage_url": "https://github.com/phryneas/show-timezone",
+
+  "permissions": ["tabs", "<all_urls>"],
+
+  "web_accessible_resources": ["/viewer.html"],
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.github.com/*"],
+      "js": ["content_scripts/content.js"]
+    }
+  ]
+}
